@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [System Preferences](SystemPreferences/README.md)
 * [Xcode](Xcode/README.md)
 * [Homebrew](Homebrew/README.md)
@@ -14,8 +15,8 @@
     * [Packages](Atom/Packages.md)
 * [Sublime Text](SublimeText/README.md)
     * [Preferences](SublimeText/Preferences.md)
-    * [Packages 1/2](SublimeText/Packages.md)
-    * [Packages 2/2](SublimeText/Plugins.md)
+    * [Packages 1\/2](SublimeText/Packages.md)
+    * [Packages 2\/2](SublimeText/Plugins.md)
 * [MySql](MySql/README.md)
 * [Ruby](Ruby/README.md)
     * [RubyGems](Ruby/RubyGems.md)
@@ -26,3 +27,4 @@
 * [Apps](Apps/README.md)
     * [Settings](Apps/Settings.md)
 * [References](References/README.md)
+
