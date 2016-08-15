@@ -20,6 +20,7 @@
 * [Ruby](Ruby/README.md)
     * [RubyGems](Ruby/RubyGems.md)
 * [Node.js](Node.js/README.md)
+* [PHP](Php/README.md)
 * [Heroku](Heroku/README.md)
 * [Vagrant](Vagrant/README.md)
 * [Docker](Docker/README.md)
