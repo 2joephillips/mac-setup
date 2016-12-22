@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>MySql · Mac OS X Dev Setup Guide </title>
+        <title>Node.js · Mac OS X Dev Setup Guide </title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Ruby/" />
+    <link rel="next" href="../Php/" />
     
     
-    <link rel="prev" href="../SublimeText/Plugins.html" />
+    <link rel="prev" href="../Ruby/RubyGems.html" />
     
 
     </head>
@@ -340,9 +340,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9" data-path="./">
+        <li class="chapter " data-level="1.9" data-path="../MySql/">
             
-                <a href="./">
+                <a href="../MySql/">
             
                     
                     MySql
@@ -385,9 +385,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="../Node.js/">
+        <li class="chapter active" data-level="1.11" data-path="./">
             
-                <a href="../Node.js/">
+                <a href="./">
             
                     
                     Node.js
@@ -525,7 +525,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >MySql</a>
+        <a href=".." >Node.js</a>
     </h1>
 </div>
 
@@ -540,14 +540,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mysql">MySQL</h1><h3 id="install">Install</h3><p>We will install <a href="http://www.mysql.com/" target="_blank">MySQL</a> using Homebrew, which will also install some header files needed for MySQL bindings in different programming languages (MySQL-Python for one).</p><p>To install, run:</p><pre><code>$ brew update # Always good to do
-$ brew install mysql</code></pre>
-<h3 id="usage">Usage</h3><p>To have launchd start MySQL now and restart at login:</p><pre><code>$ brew services start mysql</code></pre>
-<p>Or, if you don&apos;t want/need a background service you can just use the <code>mysql.server</code> tool:</p><pre><code>$ mysql.server start</code></pre>
-<p>To stop it when you are done, run:</p><pre><code>$ mysql.server stop</code></pre>
-<p>You can see the different commands available for <code>mysql.server</code> with:</p><pre><code>$ mysql.server --help</code></pre>
-<p>To connect with the command-line client, run:</p><pre><code>$ mysql -uroot</code></pre>
-<p>(Use <code>exit</code> to quit the MySQL shell.)</p><p><strong>Note</strong>: By default, the MySQL user <code>root</code> has no password. It doesn&apos;t really matter for a local development database. If you wish to change it though, you can use <code>$ mysqladmin -u root password &apos;new-password&apos;</code>.</p><h3 id="gui-tool">GUI Tool</h3><p>It is always nice to have a GUI tool for managing databases. For mac, you can use <a href="http://www.sequelpro.com/" target="_blank">SequelPro</a> to manage local and remote mysql databases. It is a free tool, you can donate to support the development.</p>
+                                <h1 id="nodejs">Node.js</h1><h2 id="install-nodejs-with-homebrew">Install <a href="http://nodejs.org/" target="_blank">Node.js</a> with Homebrew:</h2><pre><code>$ brew update
+$ brew install node</code></pre>
+<p>Node modules are installed locally in the <code>node_modules</code> folder of each project by default, but there are at least two that are worth installing globally. Those are <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a> and <a href="http://gruntjs.com/" target="_blank">Grunt</a>:</p><pre><code>$ npm install -g grunt-cli
+$ npm install -g bower</code></pre>
+<h2 id="npm-usage">Npm usage</h2><p>To install a package:</p><pre><code>$ npm install &lt;package&gt; # Install locally
+$ npm install -g &lt;package&gt; # Install globally</code></pre>
+<p>To install a package and save it in your project&apos;s <code>package.json</code> file:</p><pre><code>$ npm install &lt;package&gt; --save</code></pre>
+<p>To see what&apos;s installed:</p><pre><code>$ npm list # Local
+$ npm list -g # Global</code></pre>
+<p>To find outdated packages (locally or globally):</p><pre><code>$ npm outdated [-g]</code></pre>
+<p>To upgrade all or a particular package:</p><pre><code>$ npm update [&lt;package&gt;]</code></pre>
+<p>To uninstall a package:</p><pre><code>$ npm uninstall &lt;package&gt;</code></pre>
+
                                 
                                 </section>
                             
@@ -574,12 +579,12 @@ $ brew install mysql</code></pre>
 
             
                 
-                <a href="../SublimeText/Plugins.html" class="navigation navigation-prev " aria-label="Previous page: Packages 2/2">
+                <a href="../Ruby/RubyGems.html" class="navigation navigation-prev " aria-label="Previous page: RubyGems">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Ruby/" class="navigation navigation-next " aria-label="Next page: Ruby">
+                <a href="../Php/" class="navigation navigation-next " aria-label="Next page: PHP">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -590,7 +595,11 @@ $ brew install mysql</code></pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MySql","level":"1.9","depth":1,"next":{"title":"Ruby","level":"1.10","depth":1,"path":"Ruby/README.md","ref":"Ruby/README.md","articles":[{"title":"RubyGems","level":"1.10.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]}]},"previous":{"title":"Packages 2/2","level":"1.8.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Dev Setup Guide ","links":{"home":"http://josephephillips.com/mac-setup/","about":"http://josephephillips.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"MySql/README.md","mtime":"2016-08-15T21:42:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-15T21:43:55.766Z"},"basePath":"..","book":{"language":""}});
+<<<<<<< HEAD:_book/Node.js/index.html
+            gitbook.page.hasChanged({"page":{"title":"Node.js","level":"1.11","depth":1,"next":{"title":"PHP","level":"1.12","depth":1,"path":"Php/README.md","ref":"Php/README.md","articles":[]},"previous":{"title":"RubyGems","level":"1.10.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Dev Setup Guide ","links":{"home":"http://josephephillips.com/mac-setup/","about":"http://josephephillips.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Node.js/README.md","mtime":"2016-08-13T03:06:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-15T21:37:59.140Z"},"basePath":"..","book":{"language":""}});
+=======
+            gitbook.page.hasChanged({"page":{"title":"Node.js","level":"1.11","depth":1,"next":{"title":"Heroku","level":"1.12","depth":1,"path":"Heroku/README.md","ref":"Heroku/README.md","articles":[]},"previous":{"title":"RubyGems","level":"1.10.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Dev Setup Guide ","links":{"home":"http://josephephillips.com/mac-setup/","about":"http://josephephillips.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Node.js/README.md","mtime":"2016-08-13T03:02:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-13T03:03:08.854Z"},"basePath":"..","book":{"language":""}});
+>>>>>>> gh-pages:Node.js/index.html
         });
     </script>
 </div>

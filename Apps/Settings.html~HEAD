@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>MySql · Mac OS X Dev Setup Guide </title>
+        <title>Settings · Mac OS X Dev Setup Guide </title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Ruby/" />
+    <link rel="next" href="../References/" />
     
     
-    <link rel="prev" href="../SublimeText/Plugins.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -340,9 +340,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9" data-path="./">
+        <li class="chapter " data-level="1.9" data-path="../MySql/">
             
-                <a href="./">
+                <a href="../MySql/">
             
                     
                     MySql
@@ -450,9 +450,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.16" data-path="../Apps/">
+        <li class="chapter " data-level="1.16" data-path="./">
             
-                <a href="../Apps/">
+                <a href="./">
             
                     
                     Apps
@@ -464,9 +464,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.16.1" data-path="../Apps/Settings.html">
+        <li class="chapter active" data-level="1.16.1" data-path="Settings.html">
             
-                <a href="../Apps/Settings.html">
+                <a href="Settings.html">
             
                     
                     Settings
@@ -525,7 +525,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >MySql</a>
+        <a href=".." >Settings</a>
     </h1>
 </div>
 
@@ -540,14 +540,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mysql">MySQL</h1><h3 id="install">Install</h3><p>We will install <a href="http://www.mysql.com/" target="_blank">MySQL</a> using Homebrew, which will also install some header files needed for MySQL bindings in different programming languages (MySQL-Python for one).</p><p>To install, run:</p><pre><code>$ brew update # Always good to do
-$ brew install mysql</code></pre>
-<h3 id="usage">Usage</h3><p>To have launchd start MySQL now and restart at login:</p><pre><code>$ brew services start mysql</code></pre>
-<p>Or, if you don&apos;t want/need a background service you can just use the <code>mysql.server</code> tool:</p><pre><code>$ mysql.server start</code></pre>
-<p>To stop it when you are done, run:</p><pre><code>$ mysql.server stop</code></pre>
-<p>You can see the different commands available for <code>mysql.server</code> with:</p><pre><code>$ mysql.server --help</code></pre>
-<p>To connect with the command-line client, run:</p><pre><code>$ mysql -uroot</code></pre>
-<p>(Use <code>exit</code> to quit the MySQL shell.)</p><p><strong>Note</strong>: By default, the MySQL user <code>root</code> has no password. It doesn&apos;t really matter for a local development database. If you wish to change it though, you can use <code>$ mysqladmin -u root password &apos;new-password&apos;</code>.</p><h3 id="gui-tool">GUI Tool</h3><p>It is always nice to have a GUI tool for managing databases. For mac, you can use <a href="http://www.sequelpro.com/" target="_blank">SequelPro</a> to manage local and remote mysql databases. It is a free tool, you can donate to support the development.</p>
+                                <h1 id="app-settings">App Settings</h1><h4 id="alfred">Alfred</h4><ul><li>Set-up PowerPack
+</li>
+<li><p>General</p><ul><li>Set Alfred Hotkey to Double Tap Shift key
+</li></ul>
+</li>
+<li><p>Features</p><ul><li>Terminal/ Shell 
+<ul><li>Set prefix to &lt; 
+</li>
+<li>Set Application to Custom and add code from <a href="https://github.com/stuartcryan/custom-iterm-applescripts-for-alfred" target="_blank">Stuart Cryan</a>
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li>Workflows 
+<ul><li>Download the following ones
+<ul><li><a href="http://www.packal.org/workflow/package-managers" target="_blank">Package Mangers</a>
+</li>
+<li><a href="https://github.com/deanishe/alfred-reddit" target="_blank">Reddit</a>
+</li>
+<li><a href="http://www.packal.org/workflow/spotify-mini-player" target="_blank">Spotify Mini Player</a>
+</li>
+<li><a href="https://github.com/2joephillips/Starter-Templates---Alfred-Worflow" target="_blank">Simple App Creator</a> 
+<ul><li>Save in a Sites folder under user
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+<h4 id="cheatsheet">CheatSheet</h4><ul><li>System Preferences -&gt; Security and Privacy -&gt; Accessibility -&gt; Check
+</li></ul>
+
                                 
                                 </section>
                             
@@ -574,12 +595,12 @@ $ brew install mysql</code></pre>
 
             
                 
-                <a href="../SublimeText/Plugins.html" class="navigation navigation-prev " aria-label="Previous page: Packages 2/2">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Apps">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Ruby/" class="navigation navigation-next " aria-label="Next page: Ruby">
+                <a href="../References/" class="navigation navigation-next " aria-label="Next page: References">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -590,7 +611,11 @@ $ brew install mysql</code></pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MySql","level":"1.9","depth":1,"next":{"title":"Ruby","level":"1.10","depth":1,"path":"Ruby/README.md","ref":"Ruby/README.md","articles":[{"title":"RubyGems","level":"1.10.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]}]},"previous":{"title":"Packages 2/2","level":"1.8.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Dev Setup Guide ","links":{"home":"http://josephephillips.com/mac-setup/","about":"http://josephephillips.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"MySql/README.md","mtime":"2016-08-15T21:42:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-15T21:43:55.766Z"},"basePath":"..","book":{"language":""}});
+<<<<<<< HEAD:_book/Apps/Settings.html
+            gitbook.page.hasChanged({"page":{"title":"Settings","level":"1.16.1","depth":2,"next":{"title":"References","level":"1.17","depth":1,"path":"References/README.md","ref":"References/README.md","articles":[]},"previous":{"title":"Apps","level":"1.16","depth":1,"path":"Apps/README.md","ref":"Apps/README.md","articles":[{"title":"Settings","level":"1.16.1","depth":2,"path":"Apps/Settings.md","ref":"Apps/Settings.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Dev Setup Guide ","links":{"home":"http://josephephillips.com/mac-setup/","about":"http://josephephillips.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Apps/Settings.md","mtime":"2016-08-13T03:06:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-15T21:37:59.140Z"},"basePath":"..","book":{"language":""}});
+=======
+            gitbook.page.hasChanged({"page":{"title":"Settings","level":"1.15.1","depth":2,"next":{"title":"References","level":"1.16","depth":1,"path":"References/README.md","ref":"References/README.md","articles":[]},"previous":{"title":"Apps","level":"1.15","depth":1,"path":"Apps/README.md","ref":"Apps/README.md","articles":[{"title":"Settings","level":"1.15.1","depth":2,"path":"Apps/Settings.md","ref":"Apps/Settings.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Dev Setup Guide ","links":{"home":"http://josephephillips.com/mac-setup/","about":"http://josephephillips.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Apps/Settings.md","mtime":"2016-08-13T03:02:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-13T03:03:08.854Z"},"basePath":"..","book":{"language":""}});
+>>>>>>> gh-pages:Apps/Settings.html
         });
     </script>
 </div>
