@@ -19,7 +19,6 @@
     * [RubyGems](Ruby/RubyGems.md)
 * [MySql](MySql/README.md)
 * [Java](java.md)
-* [Go](Go/README.md)
 * [Vagrant](Vagrant/README.md)
 * [Heroku](Heroku/README.md)
 * [Docker](Docker/README.md)
