@@ -10,12 +10,11 @@ Let's just quickly change some preferences.
 
 ### Colors and Font Settings
 
-* Set hotkey to open and close the terminal to `command + option + i`
+* Set hotkey to open and close the terminal to `command + shift + i`
 * Go to profiles -&gt; Default -&gt; Terminal -&gt; Check silence bell
 * Download [one of iTerm2 color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes) from here, or [my personal favs.](https://gist.github.com/2joephillips) And then set these to your default profile colors.
-* Change the cursor text and cursor color to yellow make it more visible
+* Want something really fun.... Check out [this](https://github.com/MartinSeeler/iterm2-material-design)... :\)
 * Change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded from [here](https://github.com/adobe-fonts/source-code-pro/releases/latest).
-* If you're using BASH instead of ZSH you could add `export CLICOLOR=1` line to your `~/.bash_profile` file for nice coloring of listings.
 
-[](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)
+
 
