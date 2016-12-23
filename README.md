@@ -10,5 +10,5 @@ All contributions to the book are welcome. Please help add support for other lib
 
 **Looking for contributors to maintain and extend the documentation more**
 
-**Note:** This book has been generated using [GitBook](http://www.gitbook.io) and is open source, feel free to contribute or signal issues on [GitHub](https://github.com/2joephillips/mac-setup/).
+**Note:** This book has been generated using [GitBook](http://www.gitbook.io) and is open source, and my personal version of [Sourabh Bajaj](http://sourabhbajaj.com/mac-setup/) version. feel free to contribute or signal issues on [GitHub](https://github.com/2joephillips/mac-setup/).
 
