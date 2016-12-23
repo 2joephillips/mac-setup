@@ -1,6 +1,6 @@
 # Vim
 
-[Vim](http://www.vim.org/) is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X. 
+[Vim](http://www.vim.org/) is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X.
 
 ## Installation
 
@@ -47,24 +47,4 @@ cd ~/.vim_runtime && git pull --rebase && cd -
 ```
 
 
-## Maximum Awesome
 
-[Maximum Awesome](https://github.com/square/maximum-awesome) it's a collection of vim configuration and plugins, like a configuration manager for the vim environment.
-`
-
-### Instalation
-
-To install it, just make a clone of the repository with the git client:
-
-```bash
-git clone https://github.com/square/maximum-awesome.git
-```
-
-Then install it:
-
-```bash
-cd maximum-awesome
-rake
-```
-
-> **NOTE:** the rake command will install all dependencies needed.
