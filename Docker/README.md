@@ -6,13 +6,17 @@
 
 In order to simplify the installation process you should install homebrew-cask which provides a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries. Refer to [this](http://sourabhbajaj.com/mac-setup/Homebrew/Cask.html) article in order to install homebrew-cask.
 
-### Install {#install}
+### Install Stable {#install}
 
 Use can use cask to install Docker Toolbox which is a collection of useful docker tools such as compose, machine and Kitematic.
 
 ```
 $ brew cask install docker-toolbox
 ```
+
+### Install Beta {#quick-start}
+
+If you are looking for the cutting edge on Docker head over to the [Get Docker ](https://docs.docker.com/docker-for-mac/)page to download the latest stable version. 
 
 ### Quick Start {#quick-start}
 
