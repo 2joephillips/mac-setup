@@ -4,7 +4,7 @@
 
 ### Before you start {#before-you-start}
 
-In order to simplify the installation process you should install homebrew-cask which provides a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries. Refer to[this](http://sourabhbajaj.com/mac-setup/Homebrew/Cask.html)article in order to install homebrew-cask.
+In order to simplify the installation process you should install homebrew-cask which provides a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries. Refer to [this](http://sourabhbajaj.com/mac-setup/Homebrew/Cask.html) article in order to install homebrew-cask.
 
 ### Install {#install}
 
@@ -12,7 +12,6 @@ Use can use cask to install Docker Toolbox which is a collection of useful docke
 
 ```
 $ brew cask install docker-toolbox
-
 ```
 
 ### Quick Start {#quick-start}
@@ -21,8 +20,7 @@ For quick start find the Docker Quickstart Terminal and double click to launch i
 
 ```
 $ docker run hello-world
-
 ```
 
-You can find more about docker follow the[documentation here](https://docs.docker.com/).
+You can find more about docker follow the [documentation here](https://docs.docker.com/).
 
